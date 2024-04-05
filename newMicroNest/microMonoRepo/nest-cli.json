@@ -1,0 +1,50 @@
+{
+  "$schema": "https://json.schemastore.org/nest-cli",
+  "collection": "@nestjs/schematics",
+  "sourceRoot": "apps/solver-microservices/src",
+  "compilerOptions": {
+    "deleteOutDir": true,
+    "webpack": true,
+    "tsConfigPath": "apps/solver-microservices/tsconfig.app.json"
+  },
+  "monorepo": true,
+  "root": "apps/solver-microservices",
+  "projects": {
+    "solver-microservices": {
+      "type": "application",
+      "root": "apps/solver-microservices",
+      "entryFile": "main",
+      "sourceRoot": "apps/solver-microservices/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/solver-microservices/tsconfig.app.json"
+      }
+    },
+    "api-gateway": {
+      "type": "application",
+      "root": "apps/api-gateway",
+      "entryFile": "main",
+      "sourceRoot": "apps/api-gateway/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/api-gateway/tsconfig.app.json"
+      }
+    },
+    "answer": {
+      "type": "application",
+      "root": "apps/answer",
+      "entryFile": "main",
+      "sourceRoot": "apps/answer/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/answer/tsconfig.app.json"
+      }
+    },
+    "question": {
+      "type": "application",
+      "root": "apps/question",
+      "entryFile": "main",
+      "sourceRoot": "apps/question/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/question/tsconfig.app.json"
+      }
+    }
+  }
+}

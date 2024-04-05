@@ -1,0 +1,3 @@
+[submodule "micro/admin"]
+	path = micro/admin
+	url = https://github.com/Karanpal97/microserviceNestjs
